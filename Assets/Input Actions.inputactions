@@ -2,7 +2,7 @@
     "name": "Input Actions",
     "maps": [
         {
-            "name": "Custom UI",
+            "name": "Quest UI",
             "id": "b92fc357-c7bc-4047-b6ed-9b5de5b5b941",
             "actions": [
                 {
@@ -18,22 +18,11 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "bd880eb8-635d-4ace-8fef-9607e280095d",
-                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{RightHand}/menu",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Quit",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "f8e551a4-e68c-4732-a7b7-0c690b168e11",
                     "path": "<OculusTouchController>{RightHand}/thumbstickClicked",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Oculus Touch",
                     "action": "Quit",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -41,7 +30,35 @@
             ]
         },
         {
-            "name": "Custom Hand",
+            "name": "Vive UI",
+            "id": "875fcbd1-0913-4987-881e-2a7a3461ece3",
+            "actions": [
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "987eb2bd-a79a-4e1c-a025-494cbe400246",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5cc61d0e-e35a-4e62-b01c-18580575de5c",
+                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{RightHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Oculus Touch",
+                    "action": "Quit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Quest Hand",
             "id": "e6f47b56-8bd1-47f9-a34b-aa5a11a5250a",
             "actions": [
                 {
@@ -57,22 +74,11 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "27241d3e-bf44-47a0-974f-ec95f45f0b3f",
-                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{RightHand}/triggerpressed",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Right Trigger Press",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "8736afc3-55f4-4810-9a30-f526bf0cdc22",
                     "path": "<OculusTouchController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Oculus Touch",
                     "action": "Right Trigger Press",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -80,7 +86,35 @@
             ]
         },
         {
-            "name": "Custom Move",
+            "name": "Vive Hand",
+            "id": "cd55515f-5270-4bc6-ad70-ff7ed72f7ee8",
+            "actions": [
+                {
+                    "name": "Right Trigger Press",
+                    "type": "Button",
+                    "id": "6b0e18e5-e49b-4582-afdc-8be79395eb5a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "91e3d085-48da-42fa-b759-53cd3433cf97",
+                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{RightHand}/triggerpressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Oculus Touch",
+                    "action": "Right Trigger Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Quest Move",
             "id": "038b101d-f890-4eae-a6b2-94cd81dd7aed",
             "actions": [
                 {
@@ -96,22 +130,39 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "ef0452bd-67a2-4f67-9a28-f88451c416b5",
-                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{RightHand}/grippressed",
-                    "interactions": "Press",
+                    "id": "955030a1-d87e-4ae3-8753-d5e1104878f8",
+                    "path": "<OculusTouchController>{RightHand}/gripPressed",
+                    "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Oculus Touch",
                     "action": "Teleport",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
+                }
+            ]
+        },
+        {
+            "name": "Vive Move",
+            "id": "861b7174-f12a-4b62-b0e0-d8ff276cc56b",
+            "actions": [
+                {
+                    "name": "Teleport",
+                    "type": "Button",
+                    "id": "ac60eafa-e0ed-4227-a9af-0d4e56400aed",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
                 {
                     "name": "",
-                    "id": "955030a1-d87e-4ae3-8753-d5e1104878f8",
-                    "path": "<OculusTouchController>{RightHand}/primaryButton",
+                    "id": "d1f39464-bb05-40d3-9e5c-30c945f63a47",
+                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{RightHand}/grippressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Oculus Touch",
                     "action": "Teleport",
                     "isComposite": false,
                     "isPartOfComposite": false

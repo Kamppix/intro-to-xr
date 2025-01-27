@@ -453,15 +453,15 @@ MonoBehaviour:
 
 
 
-    Controls (Quest/Vive):
+    Controls:
 
 
-    Teleport - A / right
-    grip
+    Teleport - right grip
 
-    Switch light color - right trigger
+    Switch
+    light color - right trigger
 
-    Quit - thumbstick / menu'
+    Quit - thumbstick'
 --- !u!222 &577293250
 CanvasRenderer:
   m_ObjectHideFlags: 0

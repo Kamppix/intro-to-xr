@@ -2,13 +2,76 @@
     "name": "Input Actions",
     "maps": [
         {
-            "name": "Quest UI",
+            "name": "Quest",
             "id": "b92fc357-c7bc-4047-b6ed-9b5de5b5b941",
             "actions": [
                 {
-                    "name": "Quit",
+                    "name": "Right Thumbstick Click",
                     "type": "Button",
                     "id": "c4ab34f3-c311-405f-992c-9e37a4e0b20a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right Trigger Press",
+                    "type": "Button",
+                    "id": "b3b39c03-869a-4b4d-a931-bec6af9df337",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right Grip Press",
+                    "type": "Button",
+                    "id": "873519a6-4b0b-4706-a488-1e7a60181563",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Left Grip Press",
+                    "type": "Button",
+                    "id": "cf154f25-8e2c-4025-b4d0-d4dc5f28822d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right Primary",
+                    "type": "Button",
+                    "id": "63aec7be-1c27-403c-b3aa-7e1e6d70ed1e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Left Primary",
+                    "type": "Button",
+                    "id": "6ae1f2e7-e303-4db6-b87c-bd69edef1718",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right Secondary",
+                    "type": "Button",
+                    "id": "8fa0a00c-25ba-4c8f-a13e-5d36595088d5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Left Secondary",
+                    "type": "Button",
+                    "id": "3bc68bb5-0bd0-4e29-8033-b86f303622d8",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -23,20 +86,160 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Oculus Touch",
-                    "action": "Quit",
+                    "action": "Right Thumbstick Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6e5408e7-7d3b-4ea4-b937-3bbfbc85e812",
+                    "path": "<OculusTouchController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Oculus Touch",
+                    "action": "Right Trigger Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7539b8fe-c51e-49f8-a521-cb65ae0362e6",
+                    "path": "<OculusTouchController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Oculus Touch",
+                    "action": "Right Grip Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "492cfe8e-0aa0-4221-b7c8-af984cb16d11",
+                    "path": "<OculusTouchController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Oculus Touch",
+                    "action": "Left Grip Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "941374c8-9d2f-44e7-929d-53f3d5bda130",
+                    "path": "<OculusTouchController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Primary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8f48fe9-4a87-492f-a899-d51b48dc8465",
+                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Primary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d541e5b-190c-4d75-89f1-4c238fdac0e9",
+                    "path": "<OculusTouchController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Secondary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b68faad1-1af1-4978-87bf-c7d716c0e5ae",
+                    "path": "<OculusTouchController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Secondary",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
             ]
         },
         {
-            "name": "Vive UI",
+            "name": "Vive",
             "id": "875fcbd1-0913-4987-881e-2a7a3461ece3",
             "actions": [
                 {
-                    "name": "Quit",
+                    "name": "Menu",
                     "type": "Button",
                     "id": "987eb2bd-a79a-4e1c-a025-494cbe400246",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right Trigger Press",
+                    "type": "Button",
+                    "id": "c5aa8a37-370f-4c99-87c9-a269f9d2da70",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right Grip Press",
+                    "type": "Button",
+                    "id": "bd88efd0-a81d-4715-82e8-30837d4fa39e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Left Grip Press",
+                    "type": "Button",
+                    "id": "2d9185f3-d2a0-4839-9fe7-3d47b5afcbe8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right Trackpad Left",
+                    "type": "Button",
+                    "id": "6de1543d-703d-4f74-8a54-ce47bcc87e8c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Left Trackpad Left",
+                    "type": "Button",
+                    "id": "78f0992f-772d-4867-a811-fd107fee54bf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right Trackpad Right",
+                    "type": "Button",
+                    "id": "8c8b7cfa-f5be-4212-b9d2-bbed4af74240",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Left Trackpad Right",
+                    "type": "Button",
+                    "id": "98d08e0e-6eb2-41f1-8de4-1b41ddfd433b",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -47,123 +250,88 @@
                 {
                     "name": "",
                     "id": "5cc61d0e-e35a-4e62-b01c-18580575de5c",
-                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{RightHand}/menu",
+                    "path": "<ViveController>{RightHand}/menu",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Oculus Touch",
-                    "action": "Quit",
+                    "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Quest Hand",
-            "id": "e6f47b56-8bd1-47f9-a34b-aa5a11a5250a",
-            "actions": [
-                {
-                    "name": "Right Trigger Press",
-                    "type": "Button",
-                    "id": "e3d29f12-5031-479a-8f5b-cb4f93cb5630",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
+                },
                 {
                     "name": "",
-                    "id": "8736afc3-55f4-4810-9a30-f526bf0cdc22",
-                    "path": "<OculusTouchController>{RightHand}/triggerPressed",
+                    "id": "66291edd-74d2-487f-91cf-7031f62f2b40",
+                    "path": "<ViveController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Oculus Touch",
+                    "action": "Right Grip Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c20d1bc-57c0-4301-99e9-4f0f21cdb28c",
+                    "path": "<ViveController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Oculus Touch",
+                    "action": "Left Grip Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eea1da55-9c6d-4581-acf3-f22912ddd4fa",
+                    "path": "<ViveController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Oculus Touch",
                     "action": "Right Trigger Press",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Vive Hand",
-            "id": "cd55515f-5270-4bc6-ad70-ff7ed72f7ee8",
-            "actions": [
-                {
-                    "name": "Right Trigger Press",
-                    "type": "Button",
-                    "id": "6b0e18e5-e49b-4582-afdc-8be79395eb5a",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
+                },
                 {
                     "name": "",
-                    "id": "91e3d085-48da-42fa-b759-53cd3433cf97",
-                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{RightHand}/triggerpressed",
+                    "id": "2db9bc2a-73a9-4160-a13e-c3035a50f66f",
+                    "path": "<ViveController>{RightHand}/trackpad/left",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Oculus Touch",
-                    "action": "Right Trigger Press",
+                    "groups": "",
+                    "action": "Right Trackpad Left",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Quest Move",
-            "id": "038b101d-f890-4eae-a6b2-94cd81dd7aed",
-            "actions": [
-                {
-                    "name": "Teleport",
-                    "type": "Button",
-                    "id": "88afddea-c320-4cb9-821e-b73160044a2c",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
+                },
                 {
                     "name": "",
-                    "id": "955030a1-d87e-4ae3-8753-d5e1104878f8",
-                    "path": "<OculusTouchController>{RightHand}/gripPressed",
+                    "id": "8f559091-e335-4ad7-ae52-36d0497c9b40",
+                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{LeftHand}/trackpad/left",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Oculus Touch",
-                    "action": "Teleport",
+                    "groups": "",
+                    "action": "Left Trackpad Left",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Vive Move",
-            "id": "861b7174-f12a-4b62-b0e0-d8ff276cc56b",
-            "actions": [
-                {
-                    "name": "Teleport",
-                    "type": "Button",
-                    "id": "ac60eafa-e0ed-4227-a9af-0d4e56400aed",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
+                },
                 {
                     "name": "",
-                    "id": "d1f39464-bb05-40d3-9e5c-30c945f63a47",
-                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{RightHand}/grippressed",
+                    "id": "772afa3f-1281-40ef-b7f1-7ee8820d3266",
+                    "path": "<ViveController>{RightHand}/trackpad/right",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Oculus Touch",
-                    "action": "Teleport",
+                    "groups": "",
+                    "action": "Right Trackpad Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "17176090-4557-4859-82e9-88d5814e7c30",
+                    "path": "<ViveController>{LeftHand}/trackpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Trackpad Right",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

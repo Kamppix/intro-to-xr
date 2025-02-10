@@ -7,9 +7,11 @@ public class PlayerInput : MonoBehaviour
 {
     public InputActionReference quitAction;
     public InputActionReference teleportAction;
+    public InputActionReference rotationSpeedAction;
     public List<GameObject> viewPositions;
 
     private int currentPosition = 0;
+    public bool doubleRotationSpeed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,12 @@ public class PlayerInput : MonoBehaviour
             {
                 transform.position = viewPositions[currentPosition].transform.position;
             }
+        };
+
+        rotationSpeedAction.action.Enable();
+        rotationSpeedAction.action.performed += (ctx) =>
+        {
+            doubleRotationSpeed = !doubleRotationSpeed;
         };
     }
 }
